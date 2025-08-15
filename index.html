@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>QueueFree</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>QueueFree</h1>
+<p>Book your place, skip the queue.</p>
+</header>
+
+<main>
+<section id="booking-section">
+<h2>Book Your Spot</h2>
+<input type="text" id="userName" placeholder="Your name"/>
+<input type="number" id="userAge" placeholder="Your age"/>
+<small>Priority pass is for verified seniors (staff may check ID).</small>
+<select id="service">
+<option value="">Select a service</option>
+<option value="Clinic">Clinic</option>
+<option value="Home Affairs">Home Affairs</option>
+<option value="Bank">Bank</option>
+<option value="Doctor Visit">Doctor Visit</option>
+<option value="License Department">License Department</option>
+<option value="Labour Office/IUF">Labour Office/IUF</option>
+<option value="Post Office">Post Office</option>
+</select>
+<button onclick="bookSpot()">Book Now</button>
+<button onclick="serveNext()">Serve Next</button>
+</section>
+
+<section id="queue-status">
+<h2>Your Booking</h2>
+<p id="confirmationMessage">No booking yet</p>
+<ul id="queueList"></ul>
+</section>
+</main>
+
+<footer>
+<p>2025 QueueFree  |  Making waiting lines history</p>
+<p>Built by Nqobile P Semela - FNB App Academy 2025</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
